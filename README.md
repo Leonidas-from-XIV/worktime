@@ -1,13 +1,14 @@
 # worktime
 
-A Clojure library designed to ... well, that part is up to you.
+A program to read and acumulate working hours from my simple, custom text
+format.
 
 ## Usage
 
-FIXME
+`lein run -- -h`
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Marek Kubica
 
-Distributed under the Eclipse Public License, the same as Clojure.
+Distributed under the GNU General Public License.
