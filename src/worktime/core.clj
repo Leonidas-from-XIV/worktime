@@ -1,9 +1,10 @@
 (ns worktime.core)
-(use 'clojure.java.io)
+(use '[clojure.java.io :only [reader]])
 (use '[clojure.tools.cli :only [cli]])
 (use '[clojure.string :only [split join]])
-(use 'clj-time.core)
-(use 'clj-time.format)
+(use '[clj-time.core :only [within? date-time year month day hour minute
+                            minutes plus interval in-minutes]])
+(use '[clj-time.format :only [formatter parse]])
 
 (defn get-lines [filename]
   (with-open [rdr (reader filename)]
